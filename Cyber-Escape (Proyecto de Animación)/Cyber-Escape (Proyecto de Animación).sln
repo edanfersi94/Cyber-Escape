@@ -1,7 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{D4D64A4C-50EA-DB84-F8D9-19E9834D0D20}") = "Cyber-Escape (Proyecto de Animación)", "Assembly-CSharp.csproj", "{7C2BFF34-7FA4-611B-D6F6-F7DF1B3F768D}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cyber-Escape (Proyecto de Animación).CSharp", "Cyber-Escape (Proyecto de Animación).CSharp.csproj", "{3B0A2030-2167-9E1F-0AAE-FB99972D177F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7C2BFF34-7FA4-611B-D6F6-F7DF1B3F768D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C2BFF34-7FA4-611B-D6F6-F7DF1B3F768D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C2BFF34-7FA4-611B-D6F6-F7DF1B3F768D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C2BFF34-7FA4-611B-D6F6-F7DF1B3F768D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B0A2030-2167-9E1F-0AAE-FB99972D177F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B0A2030-2167-9E1F-0AAE-FB99972D177F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B0A2030-2167-9E1F-0AAE-FB99972D177F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B0A2030-2167-9E1F-0AAE-FB99972D177F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
