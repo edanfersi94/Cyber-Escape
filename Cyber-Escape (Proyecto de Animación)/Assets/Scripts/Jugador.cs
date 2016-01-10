@@ -47,7 +47,7 @@ public class Jugador : MonoBehaviour {
 		// El personaje comienza a moverse.
 		float movimiento = velocidad * Time.deltaTime;
 		rgBody.velocity = new Vector3 (0f, 0f, movimiento);
-		transform.position = transform.parent.position;
+		//transform.position = transform.parent.position;
 	}
 
 	public void finalizoAnimacionSalto(){
