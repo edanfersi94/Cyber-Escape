@@ -493,9 +493,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 488822}
   - 137: {fileID: 13760608}
+  - 136: {fileID: 13669552}
   m_Layer: 0
   m_Name: Modelo 3D del jugador
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2565,11 +2566,24 @@ CapsuleCollider:
   m_GameObject: {fileID: 143280}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.18021838
+  m_Enabled: 0
+  m_Radius: 0.22602338
   m_Height: 2.1189566
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!136 &13669552
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.28220606
+  m_Height: 1.9701082
+  m_Direction: 1
+  m_Center: {x: -0.001755774, y: 0.8804384, z: -0.019260436}
 --- !u!137 &13760608
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2665,8 +2679,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 400910}
   m_AABB:
-    m_Center: {x: 0.13500232, y: 0.019260436, z: -0.001755774}
-    m_Extent: {x: 0.9850541, y: 0.27286968, z: 0.93847525}
+    m_Center: {x: 0.13500232, y: -0.05685416, z: -0.001755774}
+    m_Extent: {x: 0.9850541, y: 0.34898427, z: 0.93847525}
   m_DirtyAABB: 0
 --- !u!1001 &100100000
 Prefab:
@@ -2674,7 +2688,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 143280}

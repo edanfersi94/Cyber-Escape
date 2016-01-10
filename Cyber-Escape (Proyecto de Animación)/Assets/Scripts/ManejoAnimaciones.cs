@@ -39,8 +39,6 @@ public class ManejoAnimaciones : MonoBehaviour {
 			enElSuelo = true;
 			inicioAnimacion = false;
 
-			transform.parent.position = transform.position;
-			transform.localPosition = Vector3.zero;
 		}
 	}
 }
