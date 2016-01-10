@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{D4D64A4C-50EA-DB84-F8D9-19E9834D0D20}") = "Cyber-Escape (Proyecto de Animación)", "Assembly-CSharp.csproj", "{7C2BFF34-7FA4-611B-D6F6-F7DF1B3F768D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C2BFF34-7FA4-611B-D6F6-F7DF1B3F768D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2BFF34-7FA4-611B-D6F6-F7DF1B3F768D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2BFF34-7FA4-611B-D6F6-F7DF1B3F768D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C2BFF34-7FA4-611B-D6F6-F7DF1B3F768D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
