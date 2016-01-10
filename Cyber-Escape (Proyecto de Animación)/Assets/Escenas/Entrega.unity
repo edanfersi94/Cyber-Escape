@@ -166,6 +166,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13668436, guid: e1daeb0677ff7204e9c282364e261f2b, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13669552, guid: e1daeb0677ff7204e9c282364e261f2b, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e1daeb0677ff7204e9c282364e261f2b, type: 2}
   m_IsPrefabParent: 0
@@ -289,7 +297,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 475472, guid: 873c55e82883ec247b2435fcfd04896d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.51
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 475472, guid: 873c55e82883ec247b2435fcfd04896d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -336,11 +344,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listaObjetos:
   - {fileID: 163092, guid: 1b373de84e5b9da4b92eb5fefd7e8ab6, type: 2}
+  - {fileID: 135508, guid: 2b4b842aef2d1a244ad53910ff317f70, type: 2}
   objetoLimite: {fileID: 1106242944}
   carriles:
   - -1.1
   - 0
   - 1.1
-  tiempoMin: 50
-  tiempoMax: 300
+  ultimaPosicion: 0
+  objetoElegido: 0
+  ultimoObjeto: 0
+  tiempoMin: 0
+  tiempoMax: 0
   anguloX: 0
