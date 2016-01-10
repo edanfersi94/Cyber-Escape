@@ -45,8 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ControlLaterales.cs" />
      <Compile Include="Assets\Scripts\Jugador.cs" />
-     <Compile Include="Assets\scrip.cs" />
+     <Compile Include="Assets\Scripts\ManejoAnimaciones.cs" />
      <None Include="Assets\Cosas Importadas\Mobility_01_Free_v2\Mobility_Free_Unity_Info.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
