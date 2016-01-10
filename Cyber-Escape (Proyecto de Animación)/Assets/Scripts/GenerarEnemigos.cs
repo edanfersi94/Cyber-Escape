@@ -24,7 +24,8 @@ public class GenerarEnemigos : MonoBehaviour {
 		transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z + posicionRandomZ);
 
 		if (transform.position.z < objetoLimite.gameObject.transform.position.z) {
-			Instantiate (listaEnemigos [Random.Range (0, listaEnemigos.Length)], transform.position, Quaternion.identity);
+			print (transform.rotation);
+			Instantiate (listaEnemigos [Random.Range (0, listaEnemigos.Length)], transform.position, Quaternion.AngleAxis(90, new Vector3(1,0,0)) );
 			Invoke ("Generar", Random.Range (tiempoMin, tiempoMax));
 		} else {
 			Destroy (this.gameObject);
