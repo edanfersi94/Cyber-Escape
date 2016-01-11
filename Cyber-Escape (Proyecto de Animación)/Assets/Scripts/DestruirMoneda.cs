@@ -4,9 +4,6 @@ using System.Collections;
 public class DestruirMoneda : MonoBehaviour {
 	public int Coin=0;
 
-
-
-
 	// Use this for initialization
 	void Start () {
 	
@@ -21,8 +18,10 @@ public class DestruirMoneda : MonoBehaviour {
 		
 		if (objeto.gameObject.tag == "Moneda") {
 
+			AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+			audioSource.clip = Resources.Load("Audio/soundMoneda") as AudioClip;
+			audioSource.Play();
 
-			
 			Destroy (objeto.gameObject);
 			Coin += 1;
 			print("You now have "+ Coin +" coins" );
