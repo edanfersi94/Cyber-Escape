@@ -127,31 +127,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 34fd9c2843dc9a0409bcaf1fb3e41995, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &96244947 stripped
+--- !u!1 &212186265 stripped
 GameObject:
-  m_PrefabParentObject: {fileID: 124194, guid: b6ce0d0029781134a8432d9f5906218d, type: 2}
-  m_PrefabInternal: {fileID: 953113704}
---- !u!114 &96244948
+  m_PrefabParentObject: {fileID: 143280, guid: e1daeb0677ff7204e9c282364e261f2b, type: 2}
+  m_PrefabInternal: {fileID: 337346150}
+--- !u!114 &212186272
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 96244947}
+  m_GameObject: {fileID: 212186265}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e90cec891b545642b62254feabb5b99, type: 3}
+  m_Script: {fileID: 11500000, guid: a8c5a193e36ce054e94dfc995cecf192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listaObjetos:
-  - {fileID: 96244947}
-  objetoLimite: {fileID: 1106242944}
-  carriles:
-  - -1.1
-  - 0
-  - 1.1
-  anguloX: 90
-  tiempoMin: 50
-  tiempoMax: 300
+  Coin: 0
 --- !u!1001 &337346150
 Prefab:
   m_ObjectHideFlags: 0
@@ -283,21 +274,13 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 13661040, guid: b6ce0d0029781134a8432d9f5906218d, type: 2}
-      propertyPath: m_Center.x
-      value: -0.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 13661040, guid: b6ce0d0029781134a8432d9f5906218d, type: 2}
-      propertyPath: m_Center.y
-      value: 3.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 13661040, guid: b6ce0d0029781134a8432d9f5906218d, type: 2}
-      propertyPath: m_Center.z
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 124194, guid: b6ce0d0029781134a8432d9f5906218d, type: 2}
-      propertyPath: m_TagString
-      value: Moneda
+    - target: {fileID: 11449018, guid: b6ce0d0029781134a8432d9f5906218d, type: 2}
+      propertyPath: objetoLimite
+      value: 
+      objectReference: {fileID: 1106242944}
+    - target: {fileID: 8270244, guid: b6ce0d0029781134a8432d9f5906218d, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6ce0d0029781134a8432d9f5906218d, type: 2}
