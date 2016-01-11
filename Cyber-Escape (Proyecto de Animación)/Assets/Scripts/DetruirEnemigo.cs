@@ -23,7 +23,7 @@ public class DetruirEnemigo : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision objeto){
-		if (objeto.gameObject.tag == "Enemigo") {
+		if (objeto.gameObject.tag == "Enemigo")  {
 			Destroy (objeto.gameObject);
 		}
 	}

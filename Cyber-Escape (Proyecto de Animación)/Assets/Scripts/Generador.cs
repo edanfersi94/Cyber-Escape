@@ -47,7 +47,7 @@ public class Generador: MonoBehaviour {
 		}
 	
 	
-		print ("Hola");
+		//print ("Hola");
 		// Nueva posición donde se hará la instanciación.
 		transform.position = new Vector3 (carriles[ultimaPosicion], transform.position.y, transform.position.z + posicionRandomZ);
 
