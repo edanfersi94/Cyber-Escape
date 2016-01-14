@@ -7,7 +7,7 @@ public class ManejoAnimaciones : MonoBehaviour {
 	public bool inicioAnimacion = false;
 	public bool finalizoAnimacion = true;
 	public bool enElSuelo = true;
-
+	public BoxCollider bxCollider;
 	// Variables Privadas.
 	private Animator ctrlAnimacion;
 
@@ -15,6 +15,7 @@ public class ManejoAnimaciones : MonoBehaviour {
 	// 		Función que me permite incializar variables.
 	void Start () {
 		ctrlAnimacion = GetComponent<Animator> ();
+		bxCollider = GetComponent<BoxCollider> ();
 	}
 	
 	// Descripción:
@@ -34,11 +35,18 @@ public class ManejoAnimaciones : MonoBehaviour {
 		finalizoAnimacion = true;
 	}
 
+	public void UpBoxCollider(){
+		bxCollider.center = new Vector3 (bxCollider.center.x, 2f, bxCollider.center.z);
+	}
+
+	public void DownBoxCollider(){
+		bxCollider.center = new Vector3 (bxCollider.center.x, 0.95f, bxCollider.center.z);
+	}
+
 	void LateUpdate(){
 		if (inicioAnimacion && finalizoAnimacion) {
 			enElSuelo = true;
 			inicioAnimacion = false;
-
 		}
 	}
 }
