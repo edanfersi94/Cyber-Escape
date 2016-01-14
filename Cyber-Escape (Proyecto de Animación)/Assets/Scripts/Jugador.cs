@@ -16,6 +16,9 @@ public class Jugador : MonoBehaviour {
 
 		movLateral =  1.1f;
 		actualPosition = 0f;
+		AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+		audioSource.clip = Resources.Load("Audio/alerta") as AudioClip;
+		audioSource.Play();
 	}
 	
 	// Descripción:
@@ -25,6 +28,8 @@ public class Jugador : MonoBehaviour {
 		// El personaje comienza a moverse.
 		float movimiento = velocidad * Time.deltaTime;
 		rgBody.velocity = new Vector3 (0f, 0f, movimiento);
+
+
 
 		if (Input.GetKeyDown (KeyCode.LeftArrow) && actualPosition > -movLateral) {
 			actualPosition -= movLateral;
