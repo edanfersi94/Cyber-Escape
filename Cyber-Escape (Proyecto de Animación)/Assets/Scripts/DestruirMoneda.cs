@@ -24,7 +24,7 @@ public class DestruirMoneda : MonoBehaviour {
 
 			Destroy (objeto.gameObject);
 			Coin += 1;
-			print("You now have "+ Coin +" coins" );
+			//print("You now have "+ Coin +" coins" );
 
 		}
 	}
@@ -40,6 +40,6 @@ public class DestruirMoneda : MonoBehaviour {
 		//myStyle.normal.textColor = Color.red;
 		//myStyle.hover.textColor = Color.red;
 		
-	 	GUI.Label(new Rect(10,10, 100, 30), "Score = " + Coin, myStyle);
+	 	GUI.Label(new Rect(10,10, 100, 30), "Monedas = " + Coin, myStyle);
 	}
 }

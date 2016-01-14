@@ -46,13 +46,18 @@ public class Generador: MonoBehaviour {
 			}
 		}
 	
-	
-		//print ("Hola");
+
 		// Nueva posición donde se hará la instanciación.
 		transform.position = new Vector3 (carriles[ultimaPosicion], transform.position.y, transform.position.z + posicionRandomZ);
 
 		if (transform.position.z < objetoLimite.gameObject.transform.position.z) {
-			Instantiate (listaObjetos [objetoElegido], transform.position, Quaternion.AngleAxis(anguloX, new Vector3(1, 0, 0)));
+			if (objetoElegido == 1){
+				transform.position = new Vector3 (0, transform.position.y, transform.position.z + posicionRandomZ);
+				Instantiate (listaObjetos [objetoElegido], transform.position, Quaternion.AngleAxis(anguloX, new Vector3(3, 0, 0)));
+			}else{
+				Instantiate (listaObjetos [objetoElegido], transform.position, Quaternion.AngleAxis(anguloX, new Vector3(1, 0, 0)));
+			}
+
 			ultimoObjeto = objetoElegido;
 			objetoElegido = Random.Range (0, listaObjetos.Length);
 			Invoke ("Generar", Random.Range (tiempoMin, tiempoMax));
