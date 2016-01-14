@@ -40,6 +40,6 @@ public class DestruirMoneda : MonoBehaviour {
 		//myStyle.normal.textColor = Color.red;
 		//myStyle.hover.textColor = Color.red;
 		
-	 	GUI.Label(new Rect(10,10, 100, 30), "Score = " + Coin, myStyle);
+	 	GUI.Label(new Rect(10,10, 100, 30), "Monedas = " + Coin, myStyle);
 	}
 }
