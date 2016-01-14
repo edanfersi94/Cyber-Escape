@@ -16,6 +16,9 @@ public class EnemigoController : MonoBehaviour {
 	void OnCollisionEnter(Collision objeto){
 
 		if (objeto.gameObject.tag == "Player") {
+			AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+			audioSource.clip = Resources.Load("Audio/muerte") as AudioClip;
+			audioSource.Play();
 			Destroy (objeto.gameObject);
 		}
 	}
