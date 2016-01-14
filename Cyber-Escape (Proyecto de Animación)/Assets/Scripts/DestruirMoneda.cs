@@ -24,7 +24,7 @@ public class DestruirMoneda : MonoBehaviour {
 
 			Destroy (objeto.gameObject);
 			Coin += 1;
-			print("You now have "+ Coin +" coins" );
+			//print("You now have "+ Coin +" coins" );
 
 		}
 	}
