@@ -14,9 +14,11 @@ public class TerminarJuego : MonoBehaviour {
 
 	void OnCollisionEnter(Collision objeto){
 		if (objeto.gameObject.tag == "Enemigo" || objeto.gameObject.tag == "Player") {
+			
 			Destroy (objeto.gameObject);
 
 			if (objeto.gameObject.tag == "Player") {
+				
 				print ("Ganaste");
 			}
 		}
