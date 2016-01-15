@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Jugador.cs" />
      <Compile Include="Assets\Scripts\ManejoAnimaciones.cs" />
      <Compile Include="Assets\Scripts\TerminarJuego.cs" />
+     <Compile Include="Assets\gameController.cs" />
      <Compile Include="Assets\state.cs" />
      <None Include="Assets\Cosas Importadas\Mobility_01_Free_v2\Mobility_Free_Unity_Info.txt" />
  <Reference Include="UnityEngine.UI">
