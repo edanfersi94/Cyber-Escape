@@ -291,6 +291,10 @@ Prefab:
       propertyPath: m_Name
       value: FX-1787
       objectReference: {fileID: 0}
+    - target: {fileID: 5422692, guid: 1d4dad40fff3f784dac8c02d803f3bfb, type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d4dad40fff3f784dac8c02d803f3bfb, type: 2}
   m_IsPrefabParent: 0
