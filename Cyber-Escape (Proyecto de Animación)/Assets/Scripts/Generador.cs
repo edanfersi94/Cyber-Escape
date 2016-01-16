@@ -9,6 +9,7 @@ public class Generador: MonoBehaviour {
 	public float[] carriles = {-1.1f, 0f, 1.1f};  // Ubicación de los carriles.
 	// Variable que permitirá modificar el angulo del objeto a instanciar.
 	public int anguloX;
+	public float speed = 20f;
 
 	// Variables para el manejo del tiempo entre cada instanciación.
 	public float tiempoMin = 50f;
@@ -28,7 +29,10 @@ public class Generador: MonoBehaviour {
 
 	// Descripción:
 	// 		Función que se ejecutará cada frame.
-	void Update () {}
+	void Update () {
+		transform.Rotate(new Vector3(0,90,0), speed * Time.deltaTime);
+	
+	}
 
 	// Descripción:
 	// 		Función que permite generar (instanciar) los objetos seleccionados.
@@ -55,7 +59,9 @@ public class Generador: MonoBehaviour {
 				transform.position = new Vector3 (0, transform.position.y, transform.position.z + posicionRandomZ);
 				Instantiate (listaObjetos [objetoElegido], transform.position, Quaternion.AngleAxis(anguloX, new Vector3(3, 0, 0)));
 			}else{
+				
 				Instantiate (listaObjetos [objetoElegido], transform.position, Quaternion.AngleAxis(anguloX, new Vector3(1, 0, 0)));
+
 			}
 
 			ultimoObjeto = objetoElegido;

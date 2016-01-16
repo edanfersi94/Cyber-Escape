@@ -18,7 +18,8 @@ public class TerminarJuego : MonoBehaviour {
 			Destroy (objeto.gameObject);
 
 			if (objeto.gameObject.tag == "Player") {
-				
+				Application.LoadLevel(1);
+
 				print ("Ganaste");
 			}
 		}

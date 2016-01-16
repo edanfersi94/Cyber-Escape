@@ -4,9 +4,15 @@ using System.Collections;
 public class DestruirMoneda : MonoBehaviour {
 	public int Coin=0;
 
+	//Vista inicio juego
+	public GameObject background;
+	public GameObject text;
+
 	// Use this for initialization
 	void Start () {
-	
+		background.SetActive (false);
+		text.SetActive (false);
+
 	}
 
 	// Update is called once per frame
