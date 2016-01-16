@@ -29,8 +29,6 @@ public class JugadorController : MonoBehaviour {
 		float movimiento = velocidad * Time.deltaTime;
 		rgBody.velocity = new Vector3 (0f, 0f, movimiento);
 
-
-
 		if (Input.GetKeyDown (KeyCode.LeftArrow) && actualPosition > -movLateral) {
 			actualPosition -= movLateral;
 			transform.position = new Vector3 (actualPosition, transform.position.y, transform.position.z);
