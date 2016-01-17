@@ -26,14 +26,9 @@ public class ControladorColisionesMonedas : MonoBehaviour {
 	// 		* Collision objeto: elemento con el que se choca.
 	void OnCollisionEnter(Collision objeto){
 		if (objeto.gameObject.tag == "Player") {
-
-			AudioSource audioSource = gameObject.AddComponent<AudioSource>();
-			audioSource.clip = Resources.Load("Audio/soundMoneda") as AudioClip;
-			audioSource.Play();
-
-
+			
 			Destroy (this.gameObject);
-			Coin += 1;
+
 		} else if (objeto.gameObject.tag == "EnemigoSalto") {
 			
 			this.gameObject.transform.position = new Vector3 (this.transform.position.x, 10f, this.transform.position.z);	
@@ -47,17 +42,5 @@ public class ControladorColisionesMonedas : MonoBehaviour {
 		} 
 	}
 
-	void OnGUI()
-	{
-		GUIStyle myStyle = new GUIStyle ();
-		myStyle.fontSize = 50;
 
-		Font myFont = (Font)Resources.Load("Fonts/HACKED", typeof(Font));
-		myStyle.font = myFont;
-
-		//myStyle.normal.textColor = Color.red;
-		//myStyle.hover.textColor = Color.red;
-
-		GUI.Label(new Rect(10,10, 100, 30), "Monedas = " + Coin, myStyle);
-	}
 }

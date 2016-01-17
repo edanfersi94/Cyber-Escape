@@ -18,9 +18,9 @@ public class DestruirMoneda : MonoBehaviour {
 		
 		if (objeto.gameObject.tag == "Moneda") {
 
-			//AudioSource audioSource = gameObject.AddComponent<AudioSource>();
-			//audioSource.clip = Resources.Load("Audio/soundMoneda") as AudioClip;
-			//audioSource.Play();
+			AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+			audioSource.clip = Resources.Load("Audio/soundMoneda") as AudioClip;
+			audioSource.Play();
 
 			Destroy (objeto.gameObject);
 			Coin += 1;
@@ -31,15 +31,13 @@ public class DestruirMoneda : MonoBehaviour {
 
 	void OnGUI()
 	{
+
 		GUIStyle myStyle = new GUIStyle ();
-		myStyle.fontSize = 50;
+		myStyle.fontSize = 80;
 
 		Font myFont = (Font)Resources.Load("Fonts/HACKED", typeof(Font));
 		myStyle.font = myFont;
 
-		//myStyle.normal.textColor = Color.red;
-		//myStyle.hover.textColor = Color.red;
-		
 	 	GUI.Label(new Rect(10,10, 100, 30), "Monedas = " + Coin, myStyle);
 	}
 }
