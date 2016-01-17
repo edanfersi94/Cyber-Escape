@@ -10,7 +10,13 @@ public class Ganar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
+	}
+
+	IEnumerator WaitAndShoot()
+	{
 		yield return new WaitForSeconds(4f);
 		Application.LoadLevel(0);
+
 	}
 }

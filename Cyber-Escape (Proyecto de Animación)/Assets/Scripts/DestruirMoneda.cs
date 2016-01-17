@@ -38,6 +38,9 @@ public class DestruirMoneda : MonoBehaviour {
 		Font myFont = (Font)Resources.Load("Fonts/HACKED", typeof(Font));
 		myStyle.font = myFont;
 
+		myStyle.normal.textColor = Color.white;
+		myStyle.hover.textColor = Color.white;
+
 	 	GUI.Label(new Rect(10,10, 100, 30), "Monedas = " + Coin, myStyle);
 	}
 }
