@@ -37,6 +37,6 @@ public class Ganar : MonoBehaviour {
 		myStyle.normal.textColor = Color.white;
 		myStyle.hover.textColor = Color.white;
 
-		GUI.Label(new Rect(600,450, 50, 30), "Monedas : " + DestruirMoneda.Coin, myStyle);
+		GUI.Label(new Rect(600,500, 50, 30), "Monedas : " + DestruirMoneda.Coin, myStyle);
 	}
 }
