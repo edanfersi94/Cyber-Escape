@@ -18,9 +18,9 @@ public class DestruirMoneda : MonoBehaviour {
 		
 		if (objeto.gameObject.tag == "Moneda") {
 
-			AudioSource audioSource = gameObject.AddComponent<AudioSource>();
-			audioSource.clip = Resources.Load("Audio/soundMoneda") as AudioClip;
-			audioSource.Play();
+			//AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+			//audioSource.clip = Resources.Load("Audio/soundMoneda") as AudioClip;
+			//audioSource.Play();
 
 			Destroy (objeto.gameObject);
 			Coin += 1;

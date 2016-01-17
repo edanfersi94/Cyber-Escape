@@ -16,11 +16,16 @@ public class ManejoAnimaciones : MonoBehaviour {
 	void Start () {
 		ctrlAnimacion = GetComponent<Animator> ();
 		bxCollider = GetComponent<BoxCollider> ();
+
+		AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+		audioSource.clip = Resources.Load("Audio/alerta") as AudioClip;
+		audioSource.Play();
 	}
 	
 	// Descripción:
 	// 		Función que se ejecutará cada frame.
 	void Update () {
+		
 		if (Input.GetKeyDown (KeyCode.Space) && enElSuelo) {
 			enElSuelo = false;
 
