@@ -24,4 +24,19 @@ public class GameOver : MonoBehaviour {
 		Application.LoadLevel(0);
 
 	}
+
+	void OnGUI()
+	{
+
+		GUIStyle myStyle = new GUIStyle ();
+		myStyle.fontSize = 40;
+
+		Font myFont = (Font)Resources.Load("Fonts/HACKED", typeof(Font));
+		myStyle.font = myFont;
+
+		myStyle.normal.textColor = Color.white;
+		myStyle.hover.textColor = Color.white;
+
+		GUI.Label(new Rect(600,450, 50, 30), "Monedas : " + DestruirMoneda.Coin, myStyle);
+	}
 }

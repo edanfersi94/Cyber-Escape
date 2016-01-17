@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class DestruirMoneda : MonoBehaviour {
-	public int Coin=0;
+	public static int Coin=0;
 
 	// Use this for initialization
 	void Start () {
