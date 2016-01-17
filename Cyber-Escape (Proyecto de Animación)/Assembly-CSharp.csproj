@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\DetruirEnemigo.cs" />
      <Compile Include="Assets\Scripts\EnemigoController.cs" />
      <Compile Include="Assets\Scripts\GameOver.cs" />
+     <Compile Include="Assets\Scripts\Ganar.cs" />
      <Compile Include="Assets\Scripts\Generador.cs" />
      <Compile Include="Assets\Scripts\GenerarEnemigos.cs" />
      <Compile Include="Assets\Scripts\Jugador.cs" />

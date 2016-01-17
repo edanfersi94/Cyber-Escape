@@ -19,7 +19,7 @@ public class TerminarJuego : MonoBehaviour {
 
 			if (objeto.gameObject.tag == "Player") {
 				
-				print ("Ganaste");
+
 			}
 		}
 
