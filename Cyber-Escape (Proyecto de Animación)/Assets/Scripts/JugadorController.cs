@@ -6,7 +6,7 @@ public class Jugador : MonoBehaviour {
 	// Variables Privadas.
 	private Rigidbody rgBody;
 	private float actualPosition;    // Carril en donde está ubicado el jugador. (-1.1 -> Carril 1, 0 -> Carril 2, 1.1 -> Carril 3)
-	private float movLateral; // Distancia máxima que se puede mover a los lados
+	private float movLateral;        // Distancia máxima que se puede mover a los lados
 
 	// Descripción:
 	// 		Función que me permite incializar variables.

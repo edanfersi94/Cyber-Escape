@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ControladorColisionesMoneda : MonoBehaviour {
+public class ControladorColisionesMonedas : MonoBehaviour {
 
 	// Variable públicas.
 	public float[] carriles = {-1.1f, 1.1f};
@@ -23,11 +23,12 @@ public class ControladorColisionesMoneda : MonoBehaviour {
 	// 		Función que se ejecutará cuando exista una colisión.
 	// Parámetros:
 	// 		* Collision objeto: elemento con el que se choca.
-	void onCollisionEnter(Collision objeto){
+	void OnCollisionEnter(Collision objeto){
 		if (objeto.gameObject.tag == "Player") {
 			Destroy (this.gameObject);
 		} else if (objeto.gameObject.tag == "EnemigoSalto") {
-			this.gameObject.transform.position = new Vector3 (this.transform.position.x, this.transform.position.y + 1.5f, this.transform.position.z);	
+			print ("q lo q");
+			this.gameObject.transform.position = new Vector3 (this.transform.position.x, 10f, this.transform.position.z);	
 		} else if (objeto.gameObject.tag == "EnemigoEsquivar") {
 			if (this.transform.position.x == 1.1f || this.transform.position.x == -1.1f) {
 				this.transform.position = new Vector3 (0f, this.transform.position.y, this.transform.position.z);
